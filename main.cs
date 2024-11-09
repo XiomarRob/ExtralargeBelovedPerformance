@@ -60,7 +60,7 @@ internal class Program
     {
         Console.WriteLine("We will calculate the revenue for this year.");
         int lastYearContestants = GetInput("Enter last year's number of contestants: ");
-        int thisYearContestants = GetInput("Enter this year's number of contestants: ");
+        int thisYearContestants = GetInput("Enter this year's number of contestants: "); 
 
         int ticketPrice = 25;
         int revenue = thisYearContestants * ticketPrice;
