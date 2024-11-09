@@ -68,6 +68,18 @@ internal class Program
 
         Console.WriteLine($"\nLast year's competition had {lastYearContestants} contestants, and this year's has {thisYearContestants} contestants.");
         Console.WriteLine($"Revenue expected this year is ${revenue}");
-        Console.WriteLine($"It is {greaterThan.ToString().ToLower()} that this year's competition is bigger than last year's.\n");
+
+        if (thisYearContestants > 2 * lastYearContestants)
+        {
+          Console.WriteLine("The competition is more than twice as big this year!");
+        }
+      else if (thisYearContestants > lastYearContestants)
+      {
+        Console.WriteLine("The competition is as big as ever!");
+        }
+      else
+      {
+        Console.WriteLine("A tighter race this year! Come out and cast your vote!");
+      }
+      }
     }
-}
